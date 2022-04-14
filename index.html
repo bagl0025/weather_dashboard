@@ -13,7 +13,6 @@
     <header>
         <h1>Weather Dashboard</h1>
     </header>
-    <!-- <main class="col-12 d-flex flex-column"> -->
         <div class="row justify-content-around">
        
             <div id="citySearch" class="card d-flex col-3">
@@ -21,11 +20,10 @@
                 <input id="city" type="text" placeholder="Enter a city name"></input>
                 <button id="search" type="submit">Search</button>
                 <hr>
-             <div id="cityButtons">
-
-             </div>   
+                
+                <div id="cityButtons"></div>   
             </div>
-         
+            
             <div class="card d-flex col-9">
                 <div id="currentWeather">
                     <h3 id="cwHeader">City (Date)</h3>
@@ -33,10 +31,10 @@
                     <ul id="current"></ul>
                 </div>
 
-                <!-- <div id="forecast" class="card d-flex col-8"> -->
-                    <div id="forecast" class="row"> 
-                        <h3 class="fHeader">5-Day Forecast:</h3>
-                    <!-- ow col-12 col-md-6 col-xl-3 mb-3 5day -->
+                <!-- 5 day forecast -->
+                <div id="forecast" class="row"> 
+                    <h3 class="fHeader">5-Day Forecast:</h3>
+                
                     <div id="day-1">
                         <h4 class="card-header text-light">Day 1</h4>
                         <img></img> 
@@ -74,12 +72,9 @@
                         <img></img>
                         <ul></ul>
                     </div>
-
                 </div> <!-- forcast box-->
-                <!-- </div> -->
             </div>
         </div>
-    <!-- </main> -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>

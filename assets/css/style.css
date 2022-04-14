@@ -9,30 +9,31 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
- h1 {
+/* header Styles */
+h1 {
     background-image: linear-gradient(to right, rgb(52,97,187), rgb(32,9,75));
     color: white;
     text-align: center;
- }
+}
 
- h2 {
-     text-align: center;
-     display: inline;
-     font-size: x-large;
- }
+h2 {
+    text-align: center;
+    display: inline;
+    font-size: x-large;
+}
 
- h3 {
-     text-align: left;
-     display: inline;
-     font-size: xx-large;
- }
+h3 {
+    text-align: left;
+    display: inline;
+    font-size: xx-large;
+}
 
- h4 {
-     text-align: center;
-     font-size: medium;
- }
+h4 {
+    text-align: center;
+    font-size: medium;
+}
 
- .fHeader {
+.fHeader {
     text-align: left;
     display: inline;
     font-size: x-large;
@@ -40,51 +41,29 @@ body {
     color: black;
 }
 
+/* search column style */
 #search {
     background-color: rgb(80,152,230);
     color: white;
 }
 
- #citySearch {
-     /* background-color: red; */
-     height: 90vh;
- }
-
- #current li{
-     color: black;
-     font-size: medium;
- }
-
- #currentWeather {
-    /* background-color: blue; */
-    height: 30vh;
-    color: black;
-    border: solid black 2px;
-    border-radius: 3px;
+hr {
+    height: 3px;
+    background: black;
 }
 
- #forecast {
-    /* background-color: green; */
-    height: 45vh;
-    margin-left: 0;
-    margin-right: 0;
-    color: white;
- }
+#citySearch {
+    height: 90vh;
+    padding: 30px;
+}
 
- li {
-    list-style: none; 
-    font-size: small;
-    padding: 0 0 5px 5px;
-    color: white;
- }
+input {
+    height: 40px;
+    text-align: left;
+    margin-bottom: 10px;
+}
 
- input {
-     height: 40px;
-     text-align: left;
-     margin-bottom: 10px;
- }
-
- button {
+button {
     height: 40px;
     text-align: center;
 }
@@ -100,6 +79,19 @@ body {
 #cityButtons {
     display: contents;
     align-items: center;
+}
+
+/* current weather section */
+#current li{
+    color: black;
+    font-size: medium;
+}
+
+#currentWeather {
+    height: 30vh;
+    color: black;
+    border: solid black 2px;
+    border-radius: 3px;
 }
 
 #uvi {
@@ -141,6 +133,21 @@ body {
     margin: -4px 0 0px 0px;
 }
 
+/* forecast section */
+#forecast {
+    height: 45vh;
+    margin-left: 0;
+    margin-right: 0;
+    color: white;
+}
+
+li {
+    list-style: none; 
+    font-size: small;
+    padding: 0 0 5px 5px;
+    color: white;
+}
+
 [id^="day-"] {
     background-color: rgb(45,62,80);
     height: 30vh;
@@ -153,7 +160,19 @@ img {
     width: 8vh;
 }
 
-hr {
-    height: 3px;
-    background: black;
+/* settings for small screen */
+@media (max-width: 480px) {
+    [id^="btnCity"] {
+        font-size: 12px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    input {
+        font-size: 12px;
+    }
+    #forecast {
+        flex-flow: column;
+        width: 150vh;
+    }
 }
