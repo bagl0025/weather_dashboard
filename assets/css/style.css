@@ -175,4 +175,8 @@ img {
         flex-flow: column;
         width: 150vh;
     }
+    #currentWeather {
+        width: min-content;
+        height: 45vh;
+    }
 }
